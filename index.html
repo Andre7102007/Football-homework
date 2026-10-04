@@ -1,174 +1,134 @@
 <!DOCTYPE html>
 <html>
-    <head>
-         <title>A Simple Scene</title> 
-         <script src= 
-         "https://aframe.io/releases/1.7.0/aframe.min.js"> 
-        </script>
-        </head>
-        <body> 
+    <head> 
+        <title>A Simple Scene</title>
+         <script src= "https://aframe.io/releases/1.7.0/aframe.min.js"> 
+
+         </script>
+         </head>
+         <body> 
             <a-scene>
-
-
-                <a-assets>
-                    <a-assets><img id="grass-base" src="assets\Hedge_001_BaseColor.jpg">
-                        <img id="grass-ambient-occlusion" src="assets\Hedge_001_AmbientOcclusion.jpg">
-                        <img id="grass-normal" src="assets\Hedge_001_Normal.jpg">
-                        <img id="sphericaltreeleaves-base" src="assets\Stylized_Leaves_002_basecolor.jpg">
-                        <img id="sphericaltreeleaves-ambient-occlusion" src="assets\Stylized_Leaves_002_ambientOcclusion.jpg">
-                        <img id="sphericaltreeleaves-normal" src="assets\Stylized_Leaves_002_normal.jpg">
-                </a-assets>
-                 <a-plane 
-                 color="forestgreen"
-                  position="0 0 0"
-                   rotation="-90 0 0" 
-                   width="500"
-                    height="500" > 
-                </a-plane> 
-                <a-sky 
-                color="lightskyblue" >
-             </a-sky> 
-
-<a-mixin
-id="wallcolor"
-color="lightsteelblue">
-</a-mixin>
-<a-box
-mixin="wallcolor"
-position="0 1.5 -16"
-rotation="0 0 0"
-width="10"
-height="3"
-depth="0.1">
-</a-box>
-<a-box
-mixin="wallcolor"
-position="-5 1.5 -11"
-rotation="0 90 0"
-width="10"
-height="3"
-depth="0.1">
-</a-box
->
-<a-box
-mixin="wallcolor"
-position="-5 1.5 -11"
-rotation="0 90 0"
-width="10"
-height="3"
-depth="0.1">
-</a-box>
-<a-box
-mixin="wallcolor"
-position="5 1.5 -11"
-rotation="0 90 0"
-width="10"
-height="3"
-depth="0.1">
-</a-box
->
-<a-box
-mixin="wallcolor"
-position="-2.875 1.5 -6"
-rotation="0 0 0"
-width="4.25"
-height="3"
-depth="0.1">
-</a-box
->
-<a-box
-mixin="wallcolor"
-position="2.875 1.5 -6"
-rotation="0 0 0"
-width="4.25"
-height="3"
-depth="0.1">
-</a-box
->
-<a-box
-mixin="wallcolor"
-position="0 2.75 -6"
-rotation="0 0 0"
-width="1.5"
-height="0.5"
-depth="0.1">
-</a-box
->
-<a-box
-color="tan"
-position="0 0 -11"
-width="10"
-depth="10"
-height="0.1">
-</a-box
->
-<a-box
-color="darkgray"
-position="0 3 -11"
-width="12"
-depth="12"
-height="0.25">
-</a-box>
-<a-mixin
-id="treetrunk"
-color="saddlebrown"
-geometry="radius:0.2; 
-height:3"
->
-</a-mixin>
-<a-cylinder
-mixin="treetrunk"
-position="-8 1 -7"
->
-</a-cylinder>
-<a-cylinder
-mixin="treetrunk"
-position="-3 1 -1"
->
-</a-cylinder>
-<a-cylinder
-mixin="treetrunk"
-position="8 1 -6"
->
-</a-cylinder>
-<a-cylinder
-mixin="treetrunk"
-position="4 1 -2">
-</a-cylinder>
-<a-mixin
-id="conicaltreeleaves"
-color="green"
-geometry="radius-bottom:1; 
-height:3"
->
-</a-mixin>
-<a-cone
-mixin="conicaltreeleaves"
-position="-8 2.25 -7"
->
-</a-cone>
-<a-cone
-mixin="conicaltreeleaves"
-position="4 2.25 -2"
->
-</a-cone
-mixin>
-<a-mixin
-id="sphericaltreeleaves"
-color="green"
-geometry="radius:1"
->
-</a-mixin>
-<a-sphere
-mixin="sphericaltreeleaves"
-position="-3 2 -1"
->
-</a-sphere>
-<a-sphere
-mixin="sphericaltreeleaves"
-position="8 2 -6"
->
-</a-sphere>
+                 <a-plane
+                  color="forestgreen" 
+                  position="0 0 0" 
+                  rotation="-90 0 0" 
+                  width="500" 
+                  height="500" > 
+                </a-plane>
+                 <a-sky 
+                 color="lightskyblue"
+                  > 
+                </a-sky> 
+            <a-box
+    position="0 2.5 0"
+    width="5"
+    height="0.3"
+    depth="2"
+    color="gray">
+  </a-box
+  >
+  <a-box
+    position="1.7 2.75 0"
+    width="0.8"
+    height="0.25"
+    depth="1.3"
+    color="silver"
+    >
+  </a-box
+  >
+  <a-cylinder
+    position="-2 1.25 -0.7"
+    radius="0.15"
+    height="2.5"
+    color="black">
+  </a-cylinder
+  >
+  <a-cylinder
+    position="-2 1.25 0.7"
+    radius="0.15"
+    height="2.5"
+    color="black">
+  </a-cylinder
+  >
+  <a-cylinder
+    position="2 1.25 -0.7"
+    radius="0.15"
+    height="2.5"
+    color="black">
+  </a-cylinder
+  >
+  <a-cylinder
+    position="2 1.25 0.7"
+    radius="0.15"
+    height="2.5"
+    color="black">
+  </a-cylinder
+  >
+  <a-sphere
+    position="1.5 3.15 0"
+    radius="0.35"
+    color="white">
+  </a-sphere
+  >
+  <a-box
+    position="0.4 3.05 0"
+    width="2.2"
+    height="0.45"
+    depth="0.8"
+    color="blue">
+  </a-box
+  >
+  <a-cylinder
+    position="0.3 3.05 -0.65"
+    radius="0.15"
+    height="1.3"
+    rotation="0 0 90"
+    color="white">
+  </a-cylinder
+  >
+  <a-cylinder
+    position="0.3 3.05 0.65"
+    radius="0.15"
+    height="1.3"
+    rotation="0 0 90"
+    color="white">
+  </a-cylinder
+    position="0.3 3.05 0.65"
+    radius="0.15"
+    height="1.3"
+    rotation="0 0 90"
+    color="blue">
+  </a-cylinder
+  >
+  <a-cylinder
+    position="-1.1 3.05 -0.25"
+    radius="0.18"
+    height="1.7"
+    rotation="0 0 90"
+    color="blue">
+  </a-cylinder
+  >
+  <a-cylinder
+    position="-1.1 3.05 0.25"
+    radius="0.18"
+    height="1.7"
+    rotation="0 0 90"
+    color="blue">
+  </a-cylinder
+  >
+   <a-sphere
+    position="-2 3.05 -0.25"
+    radius="0.22"
+    color="white">
+  </a-sphere
+  >
+  <a-sphere
+    position="-2 3.05 0.25"
+    radius="0.22"
+    color="white">
+  </a-sphere
+  >
+  
             </a-scene>
         </body>
         </html>
